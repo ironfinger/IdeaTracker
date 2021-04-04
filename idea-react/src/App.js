@@ -7,9 +7,14 @@ import React, { Component } from 'react';
 // import { Navbar } from 'react-bootstrap/Navbar';
 
 import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
 
-//import Container from './THUI/Components/Container';
-import Card from './THUI/Components/Card';
+import DashCard from './THUI/Components/DashCard'; 
+
 
 class App extends Component {
 
@@ -17,9 +22,35 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Container>
-					<Card>
-						<h1>Hello</h1>
-					</Card>
+					<Row>
+						<Col>
+							<Card className="Dash ">
+								<DashCard />
+							</Card>
+						</Col>
+						<Col>
+							<Card className="Dash">
+								<h1>Idea</h1>
+							</Card>
+						</Col>
+						<Col>
+							<Card>
+								<h1>Idea</h1>
+							</Card>
+						</Col>
+					</Row>
+					<Row>
+						<Col>
+							<Card>
+								<h1>Idea</h1>
+							</Card>
+						</Col>
+						<Col>
+							<Card>
+								<h1>New Idea?</h1>
+							</Card>
+						</Col>
+					</Row>
 				</Container>
 			</div>
 		);
